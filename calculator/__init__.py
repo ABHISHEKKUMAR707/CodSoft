@@ -1,12 +1,18 @@
-from .addition import add_two_numbers
-from .calculator import Calculator
-from .operations import log_operation, get_operation_description, format_number, validate_numbers
+"""
+Calculator package initialization.
+Exports main calculator functions and operations.
+"""
+
+from calculator.basic_operations import (
+    calculate_sum,
+    calculate_product,
+    print_sum_and_product,
+    sum_and_product
+)
 
 __all__ = [
-    'add_two_numbers',
-    'Calculator',
-    'log_operation',
-    'get_operation_description',
-    'format_number',
-    'validate_numbers'
+    'calculate_sum',
+    'calculate_product',
+    'print_sum_and_product',
+    'sum_and_product'
 ]
